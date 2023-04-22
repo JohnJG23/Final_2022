@@ -26,6 +26,15 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+```{r}
+Males_data <- filter(FinalData, sex == "M")
+```
+
+```{r}
+barchartGC(~infected + treatment,data=Males_data)
+barchartGC(~infected + treatment,data=Males_data , type="percent", main = ("Infected vs Treatment"))
+```
+
 
 ## Females
 

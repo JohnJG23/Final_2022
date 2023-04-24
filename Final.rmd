@@ -76,6 +76,7 @@ hi=(malesfish$conf.int[2]/(malesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
+In general, an odds ratio of 69 indicates a strong association. That is why on these male outcomes it appears to be that there is a significant association between effectiveness across males and vaccine. For example, the 95 percent confidence interval was 1.7 and 2.8 on the Fishers test and the Numerical results say males with the covid19 infection who got a placebo greatly outnumbered the males who recieved the vaccine 68 to 32 out of 100.  
 
 
 ## Females

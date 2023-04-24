@@ -90,7 +90,7 @@ barchartGC(~infected + treatment,data=females_data)
 barchartGC(~infected + treatment,data=females_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-
+Female cases from the unfortunate covid-19 epidemic can be visual representation's as just barplot's above. The outcome for females is different than the males barchart, but there is still a group of females who are sick and one group who are ok, and still the blue bar's are the females who were given a plecebo or fake medications and the pink bar's are the females who were given a vaccine or an actual strong medication.   
 
 
 ## LGBTQ

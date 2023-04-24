@@ -45,7 +45,19 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below the previously mentioned one displays the chances, for example there is a 2.7 percent more likely chance of you becoming sick with a placebo effect and a 1.2 chance of you becoming sick with a vaccine. Secondly the ok patients are not ill but according to the numerical results they are still at risk since the placebo effect is a less percent than the vaccinated percent of males.  
+The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below the previously mentioned one displays the chances, for example there is a 2.7 percent more likely chance of you becoming sick with a placebo effect and a 1.2 chance of you becoming sick with a vaccine. Secondly the ok patients are not ill but according to the numerical results they are still at risk since the placebo effect is a less percent than the vaccinated percent of males.
+
+### Inferential 
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+malesfish <- fisher.test(table1)
+malesfish
+```
+
 
 ## Females
 

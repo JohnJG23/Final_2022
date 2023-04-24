@@ -35,7 +35,7 @@ barchartGC(~infected + treatment,data=Males_data)
 barchartGC(~infected + treatment,data=Males_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Male cases from the unfortunate covid-19 epidemic can be visual representation as just barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication. At this moment we can describe that one who does not receive a vaccine or strong medication has a very higher chance of becoming ill from covid-19. That is why the light blue bars are above the pink bar, where the y axis is approximately 70 percent. Fortunately, though the next results over the x axis where it says ok are for males but who are not sick. That is why the blue and pink bars are equal, where the percent is approximately 50 on the y axis.  
+Male cases from the unfortunate covid-19 epidemic can be visual representation's as just barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication. At this moment we can describe that one who does not receive a vaccine or strong medication has a very higher chance of becoming ill from covid-19. That is why the light blue bars are above the pink bar, where the y axis is approximately 70 percent. Fortunately, though the next results over the x axis where it says ok are for males but who are not sick. That is why the blue and pink bars are equal, where the percent is approximately 50 on the y axis.  
 
 ### Numerical results
 
@@ -45,7 +45,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-
+The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below the previously mentioned one displays the chances, for example there is a 2.7 percent more likely chance of you becoming sick with a placebo effect and a 1.2 chance of you becoming sick with a vaccine. Secondly the ok patients are not ill but according to the numerical results they are still at risk since the placebo effect is a less percent than the vaccinated percent of males.  
 
 ## Females
 

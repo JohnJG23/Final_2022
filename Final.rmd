@@ -81,6 +81,17 @@ In general, an odds ratio of 69 indicates a strong association. That is why on t
 
 ## Females
 
+```{r}
+females_data <- filter(FinalData, sex == "F")
+```
+
+```{r}
+barchartGC(~infected + treatment,data=females_data)
+barchartGC(~infected + treatment,data=females_data , type="percent", main = ("Infected vs Treatment"))
+```
+
+
+
 
 ## LGBTQ
 

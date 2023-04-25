@@ -102,6 +102,18 @@ colPerc(table1)
 
 The female's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated female. On the fist table it reads that there are 43 females who went through a plecebo effect and 57 females who were given a vaccine out of 100 females that are sick and 50 placebo:50 vaccine females who are ok. Then the table below the previously mentioned one can easily help us assume that there is a small possibility that it is less likely for a female to become infected with a placebo and a higher likely chance for a female to become infected with a vaccine. That is why the scores for the bottom table are covid19(placebo) = 1.7 and covid19(vaccine) = 2.3.  
 
+### Inferential 
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+femalesfish <- fisher.test(table1)
+femalesfish
+```
+
+
 
 ## LGBTQ
 

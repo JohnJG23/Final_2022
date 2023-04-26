@@ -144,6 +144,16 @@ barchartGC(~infected + treatment,data=LGBTQ_data , type="percent", main = ("Infe
 ```
 
 
+### Numerical results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=LGBTQ_data)
+rowPerc(table1)
+colPerc(table1)
+```
+
+
+
 ## Druggies
 
 

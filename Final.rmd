@@ -130,7 +130,7 @@ hi=(femalesfish$conf.int[2]/(femalesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-
+In general, an odds ratio indicates a strong association. That is why it appears to be that there is a significant association between effectiveness across the covid-19 virus. For example, in the females automated generated responses the results have gone to prove this effective association like the males data.    
 
 ## LGBTQ
 

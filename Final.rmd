@@ -134,6 +134,14 @@ In general, an odds ratio indicates a strong association. That is why it appears
 
 ## LGBTQ
 
+```{r}
+LGBTQ_data <- filter(FinalData, LGBTQ == "gay")
+```
+
+```{r}
+barchartGC(~infected + treatment,data=LGBTQ_data)
+barchartGC(~infected + treatment,data=LGBTQ_data , type="percent", main = ("Infected vs Treatment"))
+```
 
 
 ## Druggies

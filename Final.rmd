@@ -143,6 +143,7 @@ barchartGC(~infected + treatment,data=LGBTQ_data)
 barchartGC(~infected + treatment,data=LGBTQ_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
+The barplot above here shows the percent of LGBTQ individuals who were infected with covid-19 and who were OK. The pink bars are people who received the vaccine and the blue bars are the people who received the placebo. In this barchart there was a significantly higher reported number of covid19 patients who revcieved a vaccine over the covid19 patients who received a placebo and then there was a slightly bigger number of reported patients who are ok but received a vaccine over ones who were OK and received the placebo.  
 
 ### Numerical results
 

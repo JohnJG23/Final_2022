@@ -164,6 +164,21 @@ LGBTQfish <- fisher.test(table1)
 LGBTQfish
 ```    
 
+## Effectiveness Confidence Interval 'r low' to 'r hi'
+
+
+```{r}
+effect <- LGBTQfish$p.value/(LGBTQfish$p.value +1)
+effectivenessLGBTQ = LGBTQfish$estimate/(LGBTQfish$estimate +1)*100
+print(effectivenessLGBTQ)
+```
+
+```{r}
+low=(LGBTQfish$conf.int[1]/(LGBTQfish$conf.int[1] +1))*100
+hi=(LGBTQfish$conf.int[2]/(LGBTQfish$conf.int[2] +1))*100
+options(digits=2)
+```
+
 ## Druggies
 
 

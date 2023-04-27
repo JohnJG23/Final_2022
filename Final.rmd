@@ -181,5 +181,13 @@ options(digits=2)
 
 ## Druggies
 
+```{r}
+druggies_data <- filter(FinalData, DrugUser == "yes")
+```
+
+```{r}
+barchartGC(~infected + treatment,data=druggies_data)
+barchartGC(~infected + treatment,data=druggies_data , type="percent", main = ("Infected vs Treatment"))
+```
 
 # Overall Results and Conclusions

@@ -219,6 +219,8 @@ druggiesfish <- fisher.test(table1)
 druggiesfish
 ```   
 
+Interestingly in this scenario the test results read p-value = 3e-07, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.094 0.418, sample estimates: odds ratio 0.21, and going from these results we can also assume that there is also no association between the effectiveness across the variety of sub populations tracked, but these results say otherwise. The vaccine was slightly more effective in protecting the drug using sub populations from covid.
+
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
 
 

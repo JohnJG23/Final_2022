@@ -198,4 +198,16 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+### Inferential 
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+druggiesfish <- fisher.test(table1)
+druggiesfish
+```   
+
+
 # Overall Results and Conclusions

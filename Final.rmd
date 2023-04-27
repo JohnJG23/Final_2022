@@ -209,5 +209,21 @@ druggiesfish <- fisher.test(table1)
 druggiesfish
 ```   
 
+## Effectiveness Confidence Interval 'r low' to 'r hi'
+
+
+```{r}
+effect <- druggiesfish$p.value/(druggiesfish$p.value +1)
+effectivenessdruggies = druggiesfish$estimate/(druggiesfish$estimate +1)*100
+print(effectivenessdruggies)
+```
+
+```{r}
+low=(druggiesfish$conf.int[1]/(druggiesfish$conf.int[1] +1))*100
+hi=(druggiesfish$conf.int[2]/(druggiesfish$conf.int[2] +1))*100
+options(digits=2)
+```
+
+
 
 # Overall Results and Conclusions

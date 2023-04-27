@@ -153,7 +153,16 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+### Inferential 
 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+LGBTQfish <- fisher.test(table1)
+LGBTQfish
+```    
 
 ## Druggies
 

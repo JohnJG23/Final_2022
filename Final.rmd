@@ -166,6 +166,8 @@ LGBTQfish <- fisher.test(table1)
 LGBTQfish
 ```    
 
+Interestingly in this scenario the test results read p-value = 1e-08, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.066 0.344, sample estimates: odds ratio 0.16, and going from these results we can also assume that there is also no association between the effectiveness across the variety of sub populations tracked, but the female, male, and these results say otherwise. The vaccine was slightly more effective in protecting LGBTQ people from covid.
+
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
 
 

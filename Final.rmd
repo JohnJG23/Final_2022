@@ -153,6 +153,8 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The LGBTQ numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated LGBTQ person. On the fist table it reads that there are 13 people who went through a placebo effect and 87 people who were given a vaccine out of 100 people that are sick and 49 placebo and 51 vaccine people who are OK. Then the table below has the results for the bottom table that are covid19(placebo) = 0.54, covid19(vaccine) = 3.3, OK(placebo) = 99.46, and OK(vaccine) = 96.7.
+
 ### Inferential 
 
 

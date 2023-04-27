@@ -35,7 +35,7 @@ barchartGC(~infected + treatment,data=Males_data)
 barchartGC(~infected + treatment,data=Males_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Male cases from the unfortunate covid-19 epidemic can be visual representation's as just barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication. At this moment we can describe that one who does not receive a vaccine or strong medication has a very higher chance of becoming ill from covid-19. That is why the light blue bars are above the pink bar, where the y axis is approximately 70 percent. Fortunately, though the next results over the x axis where it says ok are for males but who are not sick. That is why the blue and pink bars are equal, where the percent is approximately 50 on the y axis.  
+Male cases from the unfortunate covid-19 epidemic can be visual representation's as just barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication. At this moment we can describe that a man who does not receive a vaccine or strong medication has a very higher chance of becoming ill from covid-19. That is why the light blue bars are above the pink bar, where the y axis is approximately 70 percent. Though the next results over the x axis where it says ok are for males but who are not sick.
 
 ### Numerical results
 
@@ -45,7 +45,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below the previously mentioned one displays the chances, for example there is a 2.7 percent more likely chance of you becoming sick with a placebo effect and a 1.2 chance of you becoming sick with a vaccine. Secondly the ok patients are not ill but according to the numerical results they are still at risk since the placebo effect is a less percent than the vaccinated percent of males.
+The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below the displays that there is a 2.7 percent more likely chance of a man becoming sick with a placebo effect and a 1.2 chance of you becoming sick with a vaccine. Secondly the Ok patients result reads 97.3 for placebo and 98.8 for vaccine. According to this numerical results they are still at risk since the placebo effect is a less percent than the vaccinated percent of males.
 
 ### Inferential 
 
@@ -58,7 +58,7 @@ malesfish <- fisher.test(table1)
 malesfish
 ```
 
-The information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 2e-12, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 1.7 2.8, sample estimates: odds ratio 2.2. Going from these results we can assume that there is no association between the effectiveness across the variety of subpopulations tracked. Since the 95 percent confidence interval does not include the null value of 1, this provides additional evidence against the introductions claim that says, "Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked." and supports the conclusion that there is a significant association between effectiveness across males.
+The information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 2e-12, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 1.7 2.8, sample estimates: odds ratio 2.2. Going from these results we can assume that there is no association between the effectiveness across the variety of subpopulations tracked. Since the 95 percent confidence interval does not include the null value of 1, this provides additional evidence against the introductions claim that says, "Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked." and supports the alternative hypothesis that there is a significant association between effectiveness across males.
 
 
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
@@ -100,7 +100,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The female's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated female. On the fist table it reads that there are 43 females who went through a plecebo effect and 57 females who were given a vaccine out of 100 females that are sick and 50 placebo:50 vaccine females who are ok. Then the table below the previously mentioned one can easily help us assume that there is a small possibility that it is less likely for a female to become infected with a placebo and a higher likely chance for a female to become infected with a vaccine. That is why the scores for the bottom table are covid19(placebo) = 1.7 and covid19(vaccine) = 2.3.  
+The female's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated female. On the fist table it reads that there are 43 females who went through a placebo effect and 57 females who were given a vaccine out of 100 females that are sick and 50 placebo:50 vaccine females who are ok. Then the table below has the scores for the bottom table that are covid19(placebo) = 1.7, covid19(vaccine) = 2.3, OK(placebo) = 98.3, OK(vaccine) = 2.3.  
 
 ### Inferential 
 
@@ -113,7 +113,7 @@ femalesfish <- fisher.test(table1)
 femalesfish
 ```
 
-Interestingly similar to the males results the information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 0.005, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.60 0.92, sample estimates: odds ratio 0.74, and going from these results we can assume that there is no association between the effectiveness across the variety of subpopulations tracked, but this is similar to the male results. Since the 95 percent confidence interval does not include the null value of 1, this provides additional evidence against the introductions claim that says, "Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked." and supports the conclusion that there is a significant association between effectiveness across females. In addition the p-value of 0.005 is small. Based on this result, we would reject the null hypothesis and conclude that there is a significant association between the two variables.
+Interestingly similar to the males results the information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 0.005, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.60 0.92, sample estimates: odds ratio 0.74, and going from these results we can assume that there is also no association between the effectiveness across the variety of sub populations tracked, but there is differences between the female and the male results. Based on this result, the null hypothesis is accepted and I conclude that there is a significant association between the vaccines effectiveness and sub populations.
 
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
 
@@ -130,7 +130,7 @@ hi=(femalesfish$conf.int[2]/(femalesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-In general, an odds ratio indicates a strong association. That is why it appears to be that there is a significant association between effectiveness across the covid-19 virus. For example, in the females automated generated responses the results have gone to prove this effective association like the males data.    
+In general, an odds ratio indicates a strong association. Since this number is smaller than the males odds then there is a possibility that the vaccine is not effective for females. Thus the null hypothesis is accepted and I conclude that there is a significant association between the vaccines effectiveness and sub populations. That is why it appears to be that there is a significant association between effectiveness across the covid-19 virus. For example, in the females automated generated responses the analysis results have gone to prove that we don't have an effective association like the males data.    
 
 ## LGBTQ
 

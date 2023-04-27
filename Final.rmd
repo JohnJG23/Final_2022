@@ -236,7 +236,7 @@ hi=(druggiesfish$conf.int[2]/(druggiesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-    
+In general, an odds ratio indicates a strong association. Since this ratio is 17 it is smaller than the previous odds ratio's. Though, taking into account that the number of observations in the data for males is much higher than that of the drug user sub population data then there is a chance that the vaccine is effective. That is why it appears to be that there is a significant association between the vaccine and the drug user analysis.   
 
 
 # Overall Results and Conclusions

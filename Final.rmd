@@ -166,7 +166,7 @@ LGBTQfish <- fisher.test(table1)
 LGBTQfish
 ```    
 
-Interestingly in this scenario the test results read p-value = 1e-08, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.066 0.344, sample estimates: odds ratio 0.16, and going from these results we can also assume that there is also no association between the effectiveness across the variety of sub populations tracked, but the female, male, and these results say otherwise. The vaccine was slightly more effective in protecting LGBTQ people from covid.
+Interestingly in this scenario the test results read p-value = 1e-08, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.066 0.344, sample estimates: odds ratio 0.16, and going from these results we can also assume that there is also no association between the effectiveness across the variety of sub populations tracked, but the female, male, and these results say otherwise. The vaccine was slightly more effective in protecting LGBTQ people from covid.  
 
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
 
@@ -182,6 +182,8 @@ low=(LGBTQfish$conf.int[1]/(LGBTQfish$conf.int[1] +1))*100
 hi=(LGBTQfish$conf.int[2]/(LGBTQfish$conf.int[2] +1))*100
 options(digits=2)
 ```
+
+In general, an odds ratio indicates a strong association. Since this ratio is 14 it is smaller than the males odds ratio. Though, taking into account that the number of observations in the data for males is much higher than that of the LGBTQ data then there is a chance that the vaccine is effective. That is why it appears to be that there is a significant association between the vaccine and LGBTQ analysis.  
 
 ## Druggies
 
@@ -228,6 +230,7 @@ hi=(druggiesfish$conf.int[2]/(druggiesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
+    
 
 
 # Overall Results and Conclusions

@@ -190,4 +190,12 @@ barchartGC(~infected + treatment,data=druggies_data)
 barchartGC(~infected + treatment,data=druggies_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
+### Numerical results
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=druggies_data)
+rowPerc(table1)
+colPerc(table1)
+```
+
 # Overall Results and Conclusions

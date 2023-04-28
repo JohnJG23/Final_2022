@@ -35,7 +35,7 @@ barchartGC(~infected + treatment,data=Males_data)
 barchartGC(~infected + treatment,data=Males_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Male cases from the unfortunate covid-19 epidemic can be visual representation's as just barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication. At this moment we can describe that a man who does not receive a vaccine or strong medication has a very higher chance of becoming ill from covid-19. That is why the light blue bars are above the pink bar, where the y axis is approximately 70 percent. Though the next results over the x axis where it says ok are for males but who are not sick.
+Male cases from the clinical trials are in the barplot above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication.    
 
 ### Numerical results
 
@@ -45,7 +45,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below has the results for the bottom table that are covid19(placebo) = 2.7, covid19(vaccine) = 1.2, OK(placebo) = 97.3, OK(vaccine) = 98.8. Men who take the vaccine are safer than men who did not.
+The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below has the results for the bottom table that are covid19(placebo) = 2.7, covid19(vaccine) = 1.2, OK(placebo) = 97.3, OK(vaccine) = 98.8. Men who took the vaccine are safer than men who did not in this particular set.
 
 ### Inferential 
 
@@ -58,7 +58,7 @@ malesfish <- fisher.test(table1)
 malesfish
 ```
 
-The information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 2e-12, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 1.7 2.8, sample estimates: odds ratio 2.2. Going from these results we can assume that there is no association between the effectiveness across the variety of sub populations tracked because we have not looked at the entire analysis. 
+The information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 2e-12, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 1.7 2.8, sample estimates: odds ratio 2.2. Going from these results we can assume that there is no association between the effectiveness across the sub population tracked because the p value is smaller than the significant 0.05. 
 
 
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
@@ -76,8 +76,8 @@ hi=(malesfish$conf.int[2]/(malesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-In general, an odds ratio of 69 indicates a strong association. That is why on these male outcomes it appears to be that there is a significant association between effectiveness across males and vaccine. For example, in this males analysis the 95 percent confidence interval was 1.7 and 2.8 on the Fishers test and the Numerical results say males with the covid19 infection who got a placebo greatly outnumbered the males who recieved the vaccine 68 to 32 out of 100.  
-
+This odds ratio indicates the effectiveness of the shot given to a group of males from 18,125 observations. The chance of this shot being effective for males is 69, but there is not a supported background to this result. For example the previous barplot, numerical results, and the inferential Fisher's Exact Test for Count Data.
+    
 
 ## Females
 
@@ -90,7 +90,7 @@ barchartGC(~infected + treatment,data=females_data)
 barchartGC(~infected + treatment,data=females_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Female cases from the unfortunate covid19 epidemic can be visual representation's as just barplot's above. The outcome for females is different than the males barchart, but there is still a group of females who are sick and one group who are ok, and still the blue bar's are the females who were given a plecebo or fake medications and the pink bar's are the females who were given a vaccine or an actual strong medication.  
+Female cases from the clinical trials are in the barplot above. The outcome for females is different than the males barchart, but there is still a group of females who are sick and one group who are ok. Then the blue bar's are the females who were given a plecebo or fake medications and the pink bar's are the females who were given a vaccine or an actual strong medication and still got covid or was somehow prevented.  
 
 ### Numerical results
 
@@ -100,7 +100,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The female's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated female. On the fist table it reads that there are 43 females who went through a placebo effect and 57 females who were given a vaccine out of 100 females that are sick and 50 placebo:50 vaccine females who are ok. Then the table below has the scores for the bottom table that are covid19(placebo) = 1.7, covid19(vaccine) = 2.3, OK(placebo) = 98.3, OK(vaccine) = 2.3  
+The female's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated female. On the fist table it reads that there are 43 females who went through a placebo effect and 57 females who were given a vaccine out of 100 females that got sick and 50 placebo:50 vaccine females who are ok. Then the table below has the scores for the bottom table that are covid19(placebo) = 1.7, covid19(vaccine) = 2.3, OK(placebo) = 98.3, OK(vaccine) = 2.3.  
 
 ### Inferential 
 
@@ -113,7 +113,7 @@ femalesfish <- fisher.test(table1)
 femalesfish
 ```
 
-Interestingly similar to the males results the information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 0.005, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.60 0.92, sample estimates: odds ratio 0.74, and going from these results we can assume that there is also no association between the effectiveness across the variety of sub populations tracked, but there is differences between the female and the male results. The vaccine was not as effective as it was for males in the females analysis. 
+Interestingly similar to the males results the information we are generally looking for here is the Fishers Exact test. In this scenario the test results read p-value = 0.005, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.60 0.92, sample estimates: odds ratio 0.74, and going from these results we can assume that there is also no association between the effectiveness across the sub population tracked.  
 
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
 
@@ -130,7 +130,7 @@ hi=(femalesfish$conf.int[2]/(femalesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-In general, an odds ratio indicates a strong association. Since this number is smaller than the males odds then there is a possibility that the vaccine is not effective for females. That is why it appears to be that there is a significant association between effectiveness across the covid-19 virus. For example, in the females automated generated responses the analysis results have gone to prove that we don't have an effective association like the males data.    
+In general, an odds ratio indicates a strong association. Since this number is smaller than the males odds then there is a possibility that the vaccine is not effective for females. That is why it appears to be that there is a significant association between effectiveness across the covid-19 virus. For example, in the females automated generated responses the analysis results have gone to prove that we don't have an effective association in preventing covid for females.  
 
 ## LGBTQ
 
@@ -166,7 +166,7 @@ LGBTQfish <- fisher.test(table1)
 LGBTQfish
 ```    
 
-Interestingly in this scenario the test results read p-value = 1e-08, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.066 0.344, sample estimates: odds ratio 0.16, and going from these results we can also assume that there is also no association between the effectiveness across the variety of sub populations tracked, but the female, male, and these results say otherwise. The vaccine was slightly more effective in protecting LGBTQ people from covid.  
+Interestingly in this scenario the test results read p-value = 1e-08, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.066 0.344, sample estimates: odds ratio 0.16, going from these results we can also assume that there is also no association between the effectiveness across the variety of sub populations tracked. The chance that the vaccine was effective in protecting LGBTQ people from covid is slightly less than the chance it was for the vaccine's effectiveness in protecting males from covid, with the lgbtq value at 13.9 and the males value at 17.2. The vaccine is not likely to be effective in both future clinical trials.  
 
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
 
@@ -183,7 +183,7 @@ hi=(LGBTQfish$conf.int[2]/(LGBTQfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-In general, an odds ratio indicates a strong association. Since this ratio is 14 it is smaller than the males odds ratio. Though, taking into account that the number of observations in the data for males is much higher than that of the LGBTQ data then there is a chance that the vaccine is effective. That is why it appears to be that there is a significant association between the vaccine and LGBTQ analysis.  
+In general, an odds ratio indicates a strong association. Since this ratio is 14 it is a small possibility, or not likely. That is why it appears to be that there is no significant association between the vaccine and the LGBTQ analysis.  
 
 ## Druggies
 
@@ -206,7 +206,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The drug users numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated drug using person. On the fist table it reads that there are 17 people who went through a placebo effect and 83 people who were given a vaccine out of 100 people that are sick and 49 placebo and 51 vaccine people who are OK, like the LGBTQ results. Then the table below has the results for the bottom table that are covid19(placebo) = 0.81, covid19(vaccine) = 3.8, OK(placebo) = 99.19, and OK(vaccine) = 96.2.  
+The drug using numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated drug using person. On the fist table it reads that there are 17 people who went through a placebo effect and 83 people who were given a vaccine out of 100 people that are sick and 49 placebo and 51 vaccine people who are OK, like the LGBTQ results. Then the table below has the results for the bottom table that are covid19(placebo) = 0.81, covid19(vaccine) = 3.8, OK(placebo) = 99.19, and OK(vaccine) = 96.2.  
 
 ### Inferential 
 
@@ -219,7 +219,7 @@ druggiesfish <- fisher.test(table1)
 druggiesfish
 ```   
 
-Interestingly in this scenario the test results read p-value = 3e-07, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.094 0.418, sample estimates: odds ratio 0.21, and going from these results we can also assume that there is also no association between the effectiveness across the variety of sub populations tracked, but these results say otherwise. The vaccine was slightly more effective in protecting the drug using sub populations from covid.
+Interestingly in this scenario the test results read p-value = 3e-07, alternative hypothesis: true odds ratio is not equal to 1, 95 percent confidence interval: 0.094 0.418, and the sample estimates: odds ratio is 0.21. The values above provide a representation of the count for the drug using individuals in the clinical trial data.   
 
 ## Effectiveness Confidence Interval 'r low' to 'r hi'
 
@@ -236,7 +236,7 @@ hi=(druggiesfish$conf.int[2]/(druggiesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-In general, an odds ratio indicates a strong association. Since this ratio is 17 it is smaller than the previous odds ratio's. Though, taking into account that the number of observations in the data for males is much higher than that of the drug user sub population data then there is a chance that the vaccine is effective. That is why it appears to be that there is a significant association between the vaccine and the drug user analysis.   
+In general, an odds ratio indicates a strong association. Since this ratio is 17 it is smaller than the previous odds ratio's, the vaccine had a small effective rate in preventing covid for drug user's.  
 
 
 # Overall Results and Conclusions

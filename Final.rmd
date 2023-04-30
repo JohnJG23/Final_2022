@@ -45,7 +45,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below has the results for the bottom table that are covid19(placebo) = 2.7, covid19(vaccine) = 1.2, OK(placebo) = 97.3, OK(vaccine) = 98.8. Men who took the vaccine are safer than men who did not in this particular set.
+The male's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated male. On the fist table it reads that there are 68 males that are sick but are given a plecebo or fake medications out of 100 males and 32 males who were given a vaccine out of the 100 males. Then the table below has the results for the trial. The chance for a positive covid19 test under (placebo) = 2.7 , and the chance for a positive covid19 test under (vaccine) = 1.2, OK patients are negative tests and are (placebo) = 97.3 and (vaccine) = 98.8. Men who took the vaccine are safer than men who did not in this particular set.
 
 ### Inferential 
 
@@ -90,7 +90,7 @@ barchartGC(~infected + treatment,data=females_data)
 barchartGC(~infected + treatment,data=females_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Female cases from the clinical trials are in the barplot above. The outcome for females is different than the males barchart, but there is still a group of females who are sick and one group who are ok. Then the blue bar's are the females who were given a plecebo or fake medications and the pink bar's are the females who were given a vaccine or an actual strong medication and still got covid or was somehow prevented.  
+Female cases from the clinical trials are in the barplot above. The outcome for females is different than the males barchart, but there is still a group of females who are sick and one group who are ok. Then the blue bar's are the females who were given a plecebo or fake medications and the pink bar's are the females who were given a vaccine or an actual strong medication and still got covid on the left or was somehow prevented on the right.  
 
 ### Numerical results
 
@@ -100,7 +100,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The female's numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated female. On the fist table it reads that there are 43 females who went through a placebo effect and 57 females who were given a vaccine out of 100 females that got sick and 50 placebo:50 vaccine females who are ok. Then the table below has the scores for the bottom table that are covid19(placebo) = 1.7, covid19(vaccine) = 2.3, OK(placebo) = 98.3, OK(vaccine) = 2.3.  
+The female's numerical results displays the statistical results for the infected(vaccinated), infected(unvaccinated), OK(vaccinated), and OK(unvaccinated). On the fist table it reads that there are 43 females who went through a placebo effect and 57 females who were given a vaccine out of 100 females that got sick and 50 placebo and 50 vaccine females who are ok. Then the table below has the results for the trial. The chance for a positive covid19 test on covid(placebo) = 1.7 , and the chance for a positive covid19 test on covid(vaccine) = 2.3, OK patients are negative tests and resulted as OK = 98.3 under placebo and OK = 97.7 under vaccine. There was some how more females who were some how safe after under going a placebo effect so the vaccine was considered less valuable than the placebo in this particular set.   
 
 ### Inferential 
 
@@ -130,7 +130,7 @@ hi=(femalesfish$conf.int[2]/(femalesfish$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-In general, an odds ratio indicates a strong association. Since this number is smaller than the males odds then there is a possibility that the vaccine is not effective for females. That is why it appears to be that there is a significant association between effectiveness across the covid-19 virus. For example, in the females automated generated responses the analysis results have gone to prove that we don't have an effective association in preventing covid for females.  
+In general, an odds ratio indicates a strong association. Since this number is smaller than the males odds then there is a possibility that the vaccine is not effective for females. That is why it appears to be that there is a significant association between effectiveness across the covid-19 virus. For example, in the females analysis results have gone to prove that we don't have an effective association in preventing covid for females.  
 
 ## LGBTQ
 
@@ -153,7 +153,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The LGBTQ numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated LGBTQ person. On the fist table it reads that there are 13 people who went through a placebo effect and 87 people who were given a vaccine out of 100 people that are sick and 49 placebo and 51 vaccine people who are OK. Then the table below has the results for the bottom table that are covid19(placebo) = 0.54, covid19(vaccine) = 3.3, OK(placebo) = 99.46, and OK(vaccine) = 96.7.
+The LGBTQ numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated LGBTQ person. On the fist table it reads that there are 13 people who went through a placebo effect and 87 people who were given a vaccine out of 100 people that are sick and 49 placebo and 51 vaccine people who are OK. Then the table below has the results for the bottom table that are covid19(placebo) = 0.54, covid19(vaccine) = 3.3, OK(placebo) = 99.46, and OK(vaccine) = 96.7. In this particular set they were not getting protected, there is a 3.3 chance of getting covid even after getting the vaccine.  
 
 ### Inferential 
 
@@ -206,7 +206,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The drug using numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated drug using person. On the fist table it reads that there are 17 people who went through a placebo effect and 83 people who were given a vaccine out of 100 people that are sick and 49 placebo and 51 vaccine people who are OK, like the LGBTQ results. Then the table below has the results for the bottom table that are covid19(placebo) = 0.81, covid19(vaccine) = 3.8, OK(placebo) = 99.19, and OK(vaccine) = 96.2.  
+The drug using numerical results displays the statistical results for an infected, ok, and vaccinated or not vaccinated drug using person. On the fist table it reads that there are 17 people who went through a placebo effect and 83 people who were given a vaccine out of 100 people that are sick and 49 placebo and 51 vaccine people who are OK, like the LGBTQ results. Then the table below has the results for the bottom table that are covid19(placebo) = 0.81, covid19(vaccine) = 3.8, OK(placebo) = 99.19, and OK(vaccine) = 96.2. In this particular set of the trial the vaccine was not effective for covid patients and more effective for patients who tested negative.  
 
 ### Inferential 
 
@@ -241,4 +241,4 @@ In general, an odds ratio indicates a strong association. Since this ratio is 17
 
 # Overall Results and Conclusions
 
-After investigating the trials of a new  preventative vaccine. I learned that the null hypothesis was that the vaccine was effective effective in preventing infection from the covid19 epidemic across a variety of sub populations tracked and the alternative hypothesis was that the vaccine has exhibited different effectiveness across the variety of sub populations tracked. The first group was the males. After investigating how to build models that produced the outcomes needed I made an assessment based off of these outcomes. Based off of the Fisher's Exact Test for the male Count Data the vaccine is not effective and reject the null hypothesis and accept the alt hypothesis that is that the vaccine has exhibited different effectiveness across this variety of the sub populations tracked. Interestingly for every sub population tracked further investigation resulted in the outcome of rejecting the null hypothesis and accepting the alternative hypothesis. Based off of the models built I learned this, there is strong evidence supporting the alternative hypothesis in these models. For example the automated response for the P value in the sub groups tracked is, male p-value is 2e-12, female p-value is 0.005, LGBTQ p-value is 1e-08, and the drug user p-value is 3e-07. A statistically significant test result (P ≤ 0.05) means that the test hypothesis is false or should be rejected. After going through every sub population the outcome for the p value was a number extremely small and less than the 0.05 significant result. Therefor the vaccine should not be recommended, as it stands in these clinical trails.
+After investigating the trials of a new  preventative vaccine. I learned that the null hypothesis was that the vaccine was effective in preventing infection from the covid19 epidemic across a variety of sub populations tracked and the alternative hypothesis was that the vaccine has exhibited different effectiveness across the variety of sub populations tracked. The first group was the males. After investigating how to build models that produced the outcomes needed I made an assessment based off of these outcomes. Based off of the Fisher's Exact Test for the male Count Data the vaccine is not effective and reject the null hypothesis and accept the alt hypothesis that is that the vaccine has exhibited different effectiveness across this variety of the sub populations tracked. Interestingly for every sub population tracked further investigation resulted in the outcome of rejecting the null hypothesis and accepting the alternative hypothesis. Based off of the models built I learned this, there is strong evidence supporting the alternative hypothesis in these models. For example the automated response for the P value in the sub groups tracked is, male p-value is 2e-12, female p-value is 0.005, LGBTQ p-value is 1e-08, and the drug user p-value is 3e-07. A statistically significant test result (P ≤ 0.05) means that the test hypothesis is false or should be rejected. After going through every sub population the outcome for the p value was a number extremely small and less than the 0.05 significant result. Therefor the vaccine should not be recommended, as it stands in these clinical trails.

@@ -35,7 +35,7 @@ barchartGC(~infected + treatment,data=Males_data)
 barchartGC(~infected + treatment,data=Males_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Male cases from the clinical trials are in the barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication.    
+Male cases from the clinical trials are in the barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication. Then out of the two barchart's the first one where it says frequency on the y-axis communicates the number of people in groups of the overall data and the second bar chart where it says percent on the y axis is to explain the rate at which these treatments are being effective over a repeated particular period of time or in a given sample. In this particular set the blue bars are above the pink bars at about 70 and 50 percent, approximately. And the pink bars are under and equal to the blue bars at about 30 and 50 percent, approximately.          
 
 ### Numerical results
 

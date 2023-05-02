@@ -35,7 +35,7 @@ barchartGC(~infected + treatment,data=Males_data)
 barchartGC(~infected + treatment,data=Males_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Male cases from the clinical trials are in the barplot above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication.    
+Male cases from the clinical trials are in the barplot's above. The blue bar's are the males who were given a plecebo or fake medications and the pink bar's are the males who were given a vaccine or an actual strong medication.    
 
 ### Numerical results
 
@@ -90,7 +90,7 @@ barchartGC(~infected + treatment,data=females_data)
 barchartGC(~infected + treatment,data=females_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-Female cases from the clinical trials are in the barplot above. The outcome for females is different than the males barchart, but there is still a group of females who are sick and one group who are ok. Then the blue bar's are the females who were given a plecebo or fake medications and the pink bar's are the females who were given a vaccine or an actual strong medication and still got covid on the left or was somehow prevented on the right.  
+Female cases from the clinical trials are in the barplot's above. The outcome for females is different than the males barchart, but there is still a group of females who are sick and one group who are ok. Then the blue bar's are the females who were given a placebo or fake medications and the pink bar's are the females who were given a vaccine or an actual strong medication and still got covid on the left or was somehow prevented on the right.  
 
 ### Numerical results
 
@@ -143,7 +143,7 @@ barchartGC(~infected + treatment,data=LGBTQ_data)
 barchartGC(~infected + treatment,data=LGBTQ_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-The barplot above here shows the percent of LGBTQ individuals who were infected with covid19 and who were OK. The pink bars are people who received the vaccine and the blue bars are the people who received the placebo. In this barchart there was a significantly higher reported number of covid19 patients who received a vaccine over the covid19 patients who received a placebo and then there was a slightly bigger number of reported patients who are OK but received a vaccine over ones who were OK and received the placebo.  
+The barplot's above here shows the percent of LGBTQ individuals who were infected with covid19 and who were OK. The pink bars are people who received the vaccine and the blue bars are the people who received the placebo. In this barchart there was a significantly higher reported number of covid19 patients who received a vaccine over the covid19 patients who received a placebo and then there was a slightly bigger number of reported patients who are OK but received a vaccine over ones who were OK and received the placebo.  
 
 ### Numerical results
 
@@ -196,7 +196,7 @@ barchartGC(~infected + treatment,data=druggies_data)
 barchartGC(~infected + treatment,data=druggies_data , type="percent", main = ("Infected vs Treatment"))
 ```
 
-The barplot above here shows the percent of drug user individuals who were infected with covid19 and who were OK. The pink bars are people who received the vaccine and the blue bars are the people who received the placebo. In this barchart there was a much greater reported number of covid19 patients who received a vaccine over the covid19 patients who received a placebo and then there was a slightly bigger number of reported patients who are OK but received a vaccine over ones who were OK and received the placebo.  
+The barplot's above here shows the percent of drug user individuals who were infected with covid19 and who were OK. The pink bars are people who received the vaccine and the blue bars are the people who received the placebo. In this barchart there was a much greater reported number of covid19 patients who received a vaccine over the covid19 patients who received a placebo and then there was a slightly bigger number of reported patients who are OK but received a vaccine over ones who were OK and received the placebo.  
 
 ### Numerical results
 
